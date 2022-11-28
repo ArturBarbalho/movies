@@ -10,7 +10,13 @@ h1{
     margin:auto;
     font-size:50px;
     margin-bottom:30px;
+    
 }
+${media.lessThan('small')`
+h1{
+    margin-left:110px;
+}
+`}
 `
 export const Img = styled.img`
 width:100%;

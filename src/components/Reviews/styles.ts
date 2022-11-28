@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 export const Wrapper = styled.main`
 background-color:black;
 padding-bottom:50px;
@@ -9,6 +10,11 @@ h1{
     font-size:50px;
     margin-bottom:30px;
 }
+${media.lessThan('small')`
+h1{
+    margin-left:110px;
+}
+`}
 `
 export const Unit = styled.div`
 display:flex;

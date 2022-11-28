@@ -22,6 +22,10 @@ ${media.lessThan('medium')`
     flex-direction:column;
     justify-content:space-around;
 `}
+${media.lessThan('small')`
+padding-top:150px;
+`}
+
 `
 export const PosterImg = styled.img`
 width:50%;
