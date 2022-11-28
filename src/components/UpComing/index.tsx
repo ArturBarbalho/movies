@@ -51,7 +51,7 @@ const UpComing = ({data,genres}:props) => {
               autoplay:true,
               autoplaySpeed:1000,
               speed:2000,
-              
+              pauseOnFocus:true
               
           }
             return(

@@ -71,7 +71,9 @@ display:flex;
 max-width:2000px;
 justify-content:center;
 margin-top:100px;
-
+${media.lessThan('small')`
+    margin-top:0px;
+`}
 `
 export const Button = styled.button`
 border:none;
