@@ -80,7 +80,7 @@ const Header = ({data,genres}:props) => {
           <ul style={{ 
             margin: "0px",
             maxWidth:'200px',
-            backgroundColor: "rgb(221,221,221,0.5)",
+            backgroundColor: "white",
             marginLeft:'auto',
             marginRight:'auto',
             borderRadius:'50px',

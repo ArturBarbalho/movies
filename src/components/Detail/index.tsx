@@ -1,8 +1,9 @@
 import { ParsedUrlQuery } from 'querystring'
-import { genres } from '../../types'
+import { genres,results } from '../../types'
 import * as S from './styles'
+
 type props = {
-  data : ParsedUrlQuery 
+  data : ParsedUrlQuery | results
   genres : genres[]
 }
 const Detail = ({data,genres}:props) => {
@@ -25,22 +26,22 @@ const Detail = ({data,genres}:props) => {
 })
  const Genres = gen.map((e)=>{
   return(
-    <>{e.name+' '}</>
+    <span style={{color:'darkorange'}} key={e.id}>{e.name+' '}</span>
   )
  })
 return(
   <S.Wrapper>
     <S.Content>
-      <S.PosterImg src={posterImg} alt="" />
+      <S.PosterImg src={posterImg}  />
       <S.Info>
-        <p> <span>Release date: </span> {data.release_date}</p>
-        <p><span>Vote average: </span>{data.vote_average}</p>
+        <p> <span>Relase date:</span> {data.release_date}</p>
+        <p><span>Vote avarage:</span> {data.vote_average}</p>
         <p><span>Genres: </span>{Genres}</p>
         <p>{data.overview}</p>
         
       </S.Info>
     </S.Content>
-    <S.Img src={background} alt="" />
+    <S.Img  src={background} />
 
     
   </S.Wrapper>

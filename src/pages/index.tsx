@@ -17,7 +17,7 @@ const Home: NextPage <props> = (props) => {
   const genres = props.genres
   const popular = props.popular
   const upComing = props.upComing
-  
+  console.log(genres)
   return (
     < >
      

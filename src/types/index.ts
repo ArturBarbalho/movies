@@ -14,13 +14,11 @@ export type results={
   original_title: string
   original_language: string
   title: string
-  backdrop_path: string
+  backdrop_path: string | null
   popularity: number
   vote_count: number
   video: boolean
   vote_average: number
-  name:string
-  first_air_date:string
 }
 
 export type genres = {
@@ -42,6 +40,7 @@ export type autorDetails =
  {
   name: string
   username: string
-  avatar_path: string
-  rating: boolean
+  avatar_path: string | null
+  rating: boolean | null | number
 }
+
